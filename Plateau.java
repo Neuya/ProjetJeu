@@ -9,6 +9,7 @@ public class Plateau
 	{
 		TabCases = new Case[10][10];
 	}
+	
 
 
 
