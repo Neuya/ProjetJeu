@@ -26,12 +26,12 @@ public class Case
 		return this.coordonneeY;
 	}
 
-	public setCoordonneeX(int x)
+	public void setCoordonneeX(int x)
 	{
 		this.coordonneeX=x;
 	}
 
-	public setCoordonneeY(int y)
+	public void setCoordonneeY(int y)
 	{
 		this.coordonneeY=y;
 	}
