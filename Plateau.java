@@ -3,7 +3,7 @@
 public class Plateau
 {
 
-	private Case[] TabCases;
+	private Case[][] TabCases;
 	private Robot[] ListeRobot;
 	
 	public Plateau()
@@ -16,11 +16,15 @@ public class Plateau
 				this.TabCases[i][j]=new CaseVide();
 			}
 		}
+		Robot rouge=new Robot("rouge",5,6);
+		this.TabCases[5][6].setRobot(rouge);
+
 		ListeRobot = new Robot[2];
 	}
 	
 
 	public String toString(){
+		System.out.println("");
 		String s="";
 		for(int i=0; i<this.TabCases.length;i++){
 			for(int j=0;j<this.TabCases.length;j++){

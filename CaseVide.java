@@ -1,6 +1,6 @@
 
 
-public class CaseVide
+public class CaseVide extends Case
 {
 	public CaseVide()
 	{
@@ -11,6 +11,10 @@ public class CaseVide
 	public String toString()
 	{
 		String s = "| |";
+		if (this.hasRobot())
+		{
+			 s = "|r|";
+		}
 		return s;
 	}
 }
