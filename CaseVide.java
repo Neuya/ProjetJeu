@@ -7,4 +7,10 @@ public class CaseVide
 	{
 		super();
 	}
+
+	public String toString()
+	{
+		String s = "| |";
+		return s;
+	}
 }
