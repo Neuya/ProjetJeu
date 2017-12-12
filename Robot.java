@@ -18,5 +18,31 @@ public class Robot
 		this.CoordRobotY= y;
 	}
 
+	public int getCoordX()
+	{
+		return this.CoordRobotX;
+	}
+
+	public int getCoordY()
+	{
+		return this.CoordRobotY;
+	}
+
+	public void setCoordX(int x)
+	{
+		this.CoordRobotX=x;
+	}
+
+	public void setCoordY(int y)
+	{
+		this.CoordRobotY=y;
+	}
+
+	public String toString()
+	{
+		String s = "r";
+		return s;
+	}
+
 
 }
