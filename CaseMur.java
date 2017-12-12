@@ -20,24 +20,24 @@ public class CaseMur extends Case
 		super(x,y);
 	}
 
-	public void setMurHaut()
+	public void setMurHaut(boolean b)
 	{
-		this.MurHaut=true;
+		this.MurHaut=b;
 	}
 
-	public void setMurBas()
+	public void setMurBas(boolean b)
 	{
-		this.MurBas=true;
+		this.MurBas=b;
 	}
 
-	public void setMurDroite()
+	public void setMurDroite(boolean b)
 	{
-		this.MurDroite=true;
+		this.MurDroite=b;
 	}
 
-	public void setMurGauche()
+	public void setMurGauche(boolean b)
 	{
-		this.MurGauche=true;
+		this.MurGauche=b;
 	}
 
 	public boolean getMurHaut(){
@@ -51,6 +51,33 @@ public class CaseMur extends Case
 	}
 	public boolean getMurGauche(){
 		return this.MurGauche;
+	}
+	
+	public String toString(){
+		String s="";
+		if(this.MurGauche){
+			s+="!";
+		}
+		else{
+			s+="|";
+		}
+		if(this.MurHaut){
+			s+="H";
+		}
+		else if(this.MurBas){
+			s+="_";
+		}
+		else{
+			s+=" ";
+		}
+		if(this.MurDroite){
+			s+="!";
+		}
+		else{
+			s+="|";
+		}
+		return s;
+	
 	}
 
 

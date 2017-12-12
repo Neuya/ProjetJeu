@@ -35,7 +35,11 @@ public class Case
 	{
 		this.coordonneeY=y;
 	}
-
+	
+	public void setMurGauche(boolean b){}
+	public void setMurHaut(boolean b){}
+	public void setMurDroite(boolean b){}
+	public void setMurBas(boolean b){}
 	
 
 

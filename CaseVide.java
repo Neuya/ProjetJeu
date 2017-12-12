@@ -1,6 +1,6 @@
 
 
-public class CaseVide
+public class CaseVide extends Case
 {
 	public CaseVide()
 	{

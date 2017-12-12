@@ -3,7 +3,7 @@
 public class Plateau
 {
 
-	private Case[] TabCases;
+	public Case[][] TabCases;
 	private Robot[] ListeRobot;
 	
 	public Plateau()
@@ -16,6 +16,9 @@ public class Plateau
 				this.TabCases[i][j]=new CaseVide();
 			}
 		}
+		this.TabCases[2][3]=new CaseMur();
+		this.TabCases[2][3].setMurGauche(true);
+		this.TabCases[2][3].setMurBas(true);
 		ListeRobot = new Robot[2];
 	}
 	
