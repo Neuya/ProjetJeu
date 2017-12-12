@@ -1,4 +1,5 @@
 public class CaseRobot extends Case{
+	
 	private Robot Robot;
 	
 	public CaseRobot(){
@@ -18,4 +19,6 @@ public class CaseRobot extends Case{
 	public void setRobot(Robot r){
 		this.Robot=r;
 	}
+
+	
 }

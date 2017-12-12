@@ -54,18 +54,27 @@ public class CaseMur extends Case
 	}
 	
 	public String toString(){
-		String s="";
+		String s="|";
 		if(this.MurGauche){
 			s+="!";
 		}
 		else{
-			s+="|";
+			s+=" ";
+		}
+		if(this.MurBas){
+			s+="B";
+		}
+		else{
+			s+=" ";
+		}
+		if(this.hasRobot()){
+			s+="R";
+		}
+		else{
+			s+=" ";
 		}
 		if(this.MurHaut){
 			s+="H";
-		}
-		else if(this.MurBas){
-			s+="_";
 		}
 		else{
 			s+=" ";
@@ -74,12 +83,13 @@ public class CaseMur extends Case
 			s+="!";
 		}
 		else{
-			s+="|";
+			s+=" ";
 		}
-		return s;
+		return s+"| ";
 	
 	}
 
+	
 
 
 }

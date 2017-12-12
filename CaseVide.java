@@ -10,7 +10,11 @@ public class CaseVide extends Case
 
 	public String toString()
 	{
-		String s = "| |";
+		String s = "|     | ";
+		if (this.hasRobot())
+		{
+			 s = "|  r  | ";
+		}
 		return s;
 	}
 }
